@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../../general/titlebar/css/titlebar.css">
+    <title></title>
+
+    <script src="../../general/no_reload/no_reload.js"></script>
+    <script type="module" src="../../general/store/store.js"></script>
+    <script src="../../general/localization/localization.js"></script>
+    <script type="module" src="../../general/titlebar/js/titlebar.js"></script>
+    <script src="../scripts/top_bar.js"></script>
+    <script src="../scripts/my_library.js"></script>
+    <script src="../scripts/online_library.js"></script>
+</head>
+<body>
+    <div data-tauri-drag-region class="titlebar_and_buttons">
+        <div data-tauri-drag-region id="titlebar">
+            <img src="../../../assets/images/icon.jpg">
+            Alive Backdrops
+        </div>
+        <div class="title_buttons">
+            <button class="gray_hover" id="minimize"><img src="../../../assets/images/minimize.png"></button>
+            <button class="gray_hover" id="maximize"><img id="maximize_img"></button>
+            <button id="close"><img src="../../../assets/images/close.png"></button>
+        </div>
+    </div>
+
+
+    <div id="top_bar">
+        <div id="left">
+            <button id="my_library_btn">My Library</button>
+            <button id="online_library_btn">Online Library</button>
+        </div>
+        <div id="right">
+            <div id="add_wallpaper">
+                <button id="add_wallpaper_btn"><img src="../../../assets/images/add_wallpaper.png">Add Wallpaper</button>
+            </div>
+            <hr />
+            <button id="active_wallpaper"><img src="../../../assets/images/active_wallpaper.png">Active Wallpaper</button>
+            <hr />
+            <button id="settings"><img src="../../../assets/images/settings.png"></button>
+        </div>
+    </div>
+
+
+    <div id="libraries">
+        <div id="my_library">
+            <div id="no_wallpapers">
+                <div>
+                    <img id="no_wallpapers_img" src="../../../assets/images/no_wallpapers.png">
+                    <div id="no_wallpapers_text">
+                        No wallpapers added yet...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="online_library">
+            <div id="no_wifi">
+                <div>
+                    <img id="no_wifi_img" src="../../../assets/images/no_wifi.png">
+                    <div id="no_wifi_text">
+                        No Internet connection...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    <div class="wrapper">-->
+<!--        <div id="columner">-->
+<!--            <div>Video</div>-->
+<!--            <div>Settings</div>-->
+<!--            <div>Installing</div>-->
+<!--        </div>-->
+<!--        <div class="column" id="pick_file_div">-->
+<!--            <div id="rounded_wallpaper_preview">-->
+<!--                <video autoplay loop controls disablepictureinpicture controlslist="nodownload noplaybackrate" id="wallpaper_preview">-->
+<!--                    <source src="" type="video/mp4">-->
+<!--                </video>-->
+<!--            </div>-->
+<!--            <div id="chosen_video_path">No video is chosen yet...</div>-->
+<!--            <button id="pick_file">Pick video for live wallpaper</button>-->
+<!--        </div>-->
+<!--        <div class="divider1"></div>-->
+<!--        <div class="column">-->
+
+<!--        </div>-->
+<!--        <div class="divider2"></div>-->
+<!--        <div class="column">-->
+
+<!--        </div>-->
+<!--    </div>-->
+</body>
+</html>

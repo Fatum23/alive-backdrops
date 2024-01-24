@@ -1,0 +1,74 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "Alive Backdrops",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "fs": {
+        "all": true,
+        "scope": ["$APP/*"]
+      },
+      "all": true,
+      "notification": {
+        "all": true
+      },
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "all": true,
+        "create": true,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true
+      }
+    },
+    "windows": [
+      {
+        "label": "main",
+        "title": "Alive Backdrops",
+        "url": "frontend/main/html/main.html",
+        "width": 800,
+        "height": 600,
+        "decorations": false,
+        "center": true
+      },
+      {
+        "label": "wallpaper",
+        "fullscreen": true,
+        "url": "frontend/wallpaper/html/wallpaper.html"
+      }
+    ],
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.fatum23.alive-backdrops",
+      "icon": [
+        "icons/icon.ico"
+      ],
+      "shortDescription": "Alive Backdrops",
+      "longDescription": "Application for setting live wallpapers"
+    },
+    "security": {
+      "csp": null
+    },
+    "systemTray": {
+      "iconPath": "icons/icon.ico",
+      "iconAsTemplate": true
+    }
+  }
+}

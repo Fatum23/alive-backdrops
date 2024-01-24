@@ -1,0 +1,240 @@
+body, html {
+    height: 100%;
+    min-height: 100% !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: table;
+    background-color: #313338;
+}
+
+body > * {
+    user-select: none;
+    font-family: 'Cairo', sans-serif;
+}
+
+body > * img {
+    pointer-events: none;
+}
+
+#top_bar {
+    display: flex;
+    padding-top: 5px;
+}
+
+#top_bar button {
+    background: transparent;
+    border: 0;
+    color: white;
+    font-size: 15px;
+}
+
+#top_bar #left {
+    padding-left: 5px;
+    flex-grow: 1;
+}
+
+#top_bar #right {
+    height: 24px;
+    align-items: center;
+    display: flex;
+    gap: 2px;
+}
+
+#my_library_btn:after {
+    padding-top: 2px;
+    content: " ";
+    display: block;
+    width: 90px;
+    height: 1px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+#online_library_btn:after {
+    padding-top: 2px;
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+#add_wallpaper {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+#add_wallpaper button {
+    display: flex;
+    height: 24px;
+    border-width: 0;
+    background-color: transparent;
+    align-items: center;
+    color: white;
+    gap: 5px;
+}
+
+#add_wallpaper button img {
+    height: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+#active_wallpaper {
+    display: flex;
+    height: 24px;
+    border-width: 0;
+    background-color: transparent;
+    align-items: center;
+    color: white;
+    gap: 5px;
+}
+
+#active_wallpaper img {
+    height: 24px;
+}
+
+#settings {
+    display: flex;
+    height: 24px;
+    border-width: 0;
+    background-color: transparent;
+    align-items: center;
+}
+
+#settings img {
+    height: 24px;
+}
+
+hr {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 0.5px;
+    height: 22px;
+    background-color: grey;
+}
+
+#libraries {
+    display: table-row;
+    height: 100%;
+}
+
+#my_library {
+    height: 100%;
+}
+
+#no_wallpapers, #no_wifi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#no_wallpapers_img, #no_wifi_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#no_wallpapers_text, #no_wifi_text {
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#online_library {
+    display: none;
+    height: 100%;
+}
+
+#no_wifi {
+    display: none;
+}
+
+
+/*#columner {*/
+/*    padding-top: 10px;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*#columner > div {*/
+/*    color: white;*/
+/*    font-family: "Calibri Light";*/
+/*}*/
+
+/*.divider1 {*/
+/*  border-left: 1px solid #696969;*/
+/*  height: calc(100% - 24px);*/
+/*  position: absolute;*/
+/*  left: 33.33%;*/
+/*  top: calc(24px);*/
+/*}*/
+/*.divider2 {*/
+/*  border-left: 1px solid #696969;*/
+/*  height: calc(100% - 24px);*/
+/*  position: absolute;*/
+/*  left: 66.66%;*/
+/*  top: calc(24px);*/
+/*}*/
+
+/*.column > * {*/
+/*    margin: 20px 0;*/
+/*}*/
+
+/*.column {*/
+/*    width: 33.33%;*/
+/*    float: left;*/
+/*}*/
+
+/*#rounded_wallpaper_preview {*/
+/*    padding-top: 50px;*/
+/*    padding-left: calc((100% - 280) / 2);*/
+/*    border-radius: 20px;*/
+/*    overflow: hidden;*/
+/*    -webkit-transform: translateZ(0);*/
+/*}*/
+
+
+/*#wallpaper_preview {*/
+/*    visibility: hidden;*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    width: 280px;*/
+/*    height: 157.5px;*/
+/*    border-radius: 10px 10px 10px ;*/
+/*}*/
+
+/*#pick_file {*/
+/*    color: white;*/
+/*    border: none;*/
+/*    background-color: #2e72e9;*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    border-radius: 15px;*/
+/*    height: 40px;*/
+/*    width: 75%;*/
+/*    font-size: 15px;*/
+/*}*/
+
+
+/*#chosen_video_path {*/
+/*    padding-left: 10px;*/
+/*    color: white;*/
+/*    overflow-wrap: anywhere;*/
+/*    text-align: center;*/
+/*    user-select: text;*/
+/*    font-family: "Calibri Light";*/
+/*}*/

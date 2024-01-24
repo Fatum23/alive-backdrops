@@ -1,0 +1,4 @@
+#313338 - bg grey
+#4d4e51 - light grey
+#2b2d31 - dark grey
+#213280 - blue

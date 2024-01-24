@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(43,45,48,255);
+}
+
+body > * {
+    user-select: none;
+    font-family: 'Cairo', sans-serif;
+}
+
+body > * img {
+    pointer-events: none;
+}
+
+#back_next {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#back, #next {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 17.5px;
+    display: flex;
+    align-items: center;
+}
