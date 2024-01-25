@@ -5,8 +5,7 @@ const { invoke } = window.__TAURI__.tauri
 
 window.addEventListener("load", async () => {
     document.getElementById('minimize').addEventListener("click", event => {
-        //invoke("wallpaper")
-        //appWindow.minimize()
+        appWindow.minimize()
     });
 
 

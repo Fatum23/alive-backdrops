@@ -8,15 +8,6 @@ body {
     background-color: rgba(43,45,48,255);
 }
 
-body > * {
-    user-select: none;
-    font-family: 'Cairo', sans-serif;
-}
-
-body > * img {
-    pointer-events: none;
-}
-
 #back_next {
     display: flex;
     width: 100%;

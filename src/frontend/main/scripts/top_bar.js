@@ -21,10 +21,6 @@ window.addEventListener("load", () => {
         document.getElementById("online_library").style.display = "flex"
     })
 
-        // document.getElementById('pick_file').addEventListener("click", event => {
-        //     ipcRenderer.send('pick_file');
-        // });
-
     document.getElementById("add_wallpaper_btn").addEventListener("click", () => {
         window.location.href = "../../add_wallpaper/html/add_wallpaper.html"
     })

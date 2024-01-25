@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/add_wallpaper.css">
+    <link rel="stylesheet" href="../css/add_wallpaper.css">
     <link rel="stylesheet" href="../../general/titlebar/css/titlebar.css">
     <script src="../../general/titlebar/js/titlebar.js"></script>
+    <script src="../js/back_next.js"></script>
     <title></title>
 </head>
 <body>
-    <div class="titlebar_and_buttons">
-        <div class="titlebar">
+    <div data-tauri-drag-region class="titlebar_and_buttons">
+        <div data-tauri-drag-region id="titlebar">
             <img src="../../../assets/images/icon.jpg">
-            Alive Backdrops
+            Alive Backdrops - Add Wallpaper
         </div>
         <div class="title_buttons">
             <button class="gray_hover" id="minimize"><img src="../../../assets/images/minimize.png"></button>
-            <button class="gray_hover" id="maximize"><img id="maximize_img" src="../../../assets/images/maximize.png"></button>
+            <button class="gray_hover" id="maximize"><img id="maximize_img"></button>
             <button id="close"><img src="../../../assets/images/close.png"></button>
         </div>
     </div>

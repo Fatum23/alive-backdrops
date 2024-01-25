@@ -44,3 +44,12 @@
 .gray_hover:hover {
     background-color: grey;
 }
+
+body > * {
+    user-select: none;
+    font-family: 'Cairo', sans-serif;
+}
+
+body > * img {
+    pointer-events: none;
+}

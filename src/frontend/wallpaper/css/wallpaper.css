@@ -9,6 +9,6 @@ video {
     margin: 0;
     height: 100vh;
     width: 100%;
-    object-fit: fill; // use "cover" to avoid distortion
+    object-fit: fill;
     position: absolute;
 }
