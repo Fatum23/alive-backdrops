@@ -1,4 +1,4 @@
-const { LogicalSize, appWindow } = window.__TAURI__.window;
+const { app } = window.__TAURI__.tauri
 
 
 window.onload = function () {
@@ -9,6 +9,6 @@ window.onload = function () {
 function back(state) {
     if (state === 1) {
         window.location.href = "../../main/html/main.html"
-        appWindow.close()
+        appWindow.setTitle('Alive Backdrops')
     }
 }

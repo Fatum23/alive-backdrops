@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../general/titlebar/css/titlebar.css">
     <script src="../../general/titlebar/js/titlebar.js"></script>
     <script src="../js/back_next.js"></script>
+    <script src="../js/drag_and_drop.js" type="module"></script>
     <title></title>
 </head>
 <body>
@@ -26,6 +27,30 @@
         <button id="next">Next<img src="../../../assets/images/next.png"></button>
     </div>
 
-    <div class="body"></div>
+    <div id="body">
+        <div class="center">
+            <video id="preview" autoplay></video>
+        </div>
+        <div class="center">
+            <div id="dropArea">Drop files here</div>
+        </div>
+        <div class="center">
+            <button id="pick">Pick File</button>
+        </div>
+        <div class="center">
+            <div id="file"></div>
+        </div>
+
+        <div class="center">
+            <div id="or">Or</div>
+        </div>
+
+        <div class="center">
+            <div id="url"></div>
+        </div>
+        <div class="center">
+            <div id="chosen_url"></div>
+        </div>
+    </div>
 </body>
 </html>

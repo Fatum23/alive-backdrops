@@ -146,7 +146,6 @@ fn wallpaper_service() {
                 let wallpaper = *WALLPAPER.lock().unwrap();
                 let audio = *AUDIO.lock().unwrap();
 
-
                 send_to_js(wallpaper.to_string(), audio.to_string());
                 
                 *WALLPAPER.lock().unwrap() = true;

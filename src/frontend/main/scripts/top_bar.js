@@ -23,6 +23,7 @@ window.addEventListener("load", () => {
 
     document.getElementById("add_wallpaper_btn").addEventListener("click", () => {
         window.location.href = "../../add_wallpaper/html/add_wallpaper.html"
+        appWindow.setTitle('Alive Backdrops - Add Wallpaper')
     })
 
     document.getElementById("settings").addEventListener("click", async () => {

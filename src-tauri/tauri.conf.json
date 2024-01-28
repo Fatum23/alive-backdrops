@@ -11,10 +11,22 @@
     "version": "0.0.0"
   },
   "tauri": {
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: https://asset.localhost"
+    },
     "allowlist": {
+      "path": {
+        "all": true
+      },
       "fs": {
         "all": true,
-        "scope": ["$APP/*"]
+        "scope": [
+          "**"
+        ]
+      },
+      "protocol": {
+        "asset": true,
+        "assetScope": ["**"]
       },
       "all": true,
       "notification": {
@@ -43,9 +55,10 @@
         "title": "Alive Backdrops",
         "url": "frontend/main/html/main.html",
         "width": 800,
-        "height": 600,
+        "height": 700,
         "decorations": false,
-        "center": true
+        "center": true,
+        "fileDropEnabled": true
       },
       {
         "label": "wallpaper",
@@ -62,9 +75,6 @@
       ],
       "shortDescription": "Alive Backdrops",
       "longDescription": "Application for setting live wallpapers"
-    },
-    "security": {
-      "csp": null
     },
     "systemTray": {
       "iconPath": "icons/icon.ico",
