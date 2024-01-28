@@ -29,9 +29,8 @@ body {
 }
 
 #preview {
-    display: flex;
-    width: 400px;
-    height: 400px;
+    width: 384px;
+    height: 216px;
 }
 
 #dropArea {

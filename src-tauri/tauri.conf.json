@@ -12,7 +12,7 @@
   },
   "tauri": {
     "security": {
-      "csp": "default-src 'self'; img-src 'self' asset: https://asset.localhost"
+      "csp": null
     },
     "allowlist": {
       "path": {
@@ -25,6 +25,7 @@
         ]
       },
       "protocol": {
+        "all": false,
         "asset": true,
         "assetScope": ["**"]
       },

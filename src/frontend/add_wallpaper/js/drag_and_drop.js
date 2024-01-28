@@ -12,6 +12,6 @@ window.onload = function () {
     listen('tauri://file-drop', event => {
         let path = event.payload
         change_preview(path)
-        document.getElementById("dropArea").innerHTML = event.payload
+        document.getElementById("path").innerHTML = event.payload
     });
 }
